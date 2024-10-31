@@ -88,5 +88,8 @@ const galleryContainer = document.querySelector('.gallery');
 galleryContainer.innerHTML = createGalleryItems(images);
 
 const lightbox = new SimpleLightbox('.gallery a', {
-    captionsData: 'alt',   
+    captions: true,             
+    captionsData: 'alt',       
+    captionPosition: 'bottom', 
+    captionDelay: 250         
 });
